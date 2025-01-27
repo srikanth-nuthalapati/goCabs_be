@@ -12,14 +12,5 @@ let db = mysql.createPool({
     queueLimit:0
 });
 
-db.connect((err) => {
-    if (err) {
-        console.error('error connecting:', err);
-    }
-    else {
-        console.log('mysql connected');
-    }
-})
-
 
 module.exports = db;
